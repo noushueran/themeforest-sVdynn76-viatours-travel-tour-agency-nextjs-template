@@ -1,0 +1,22 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+  environment = { NEXT_TELEMETRY_DISABLED = "1" }
+
+# These redirects are crucial for Next.js static export on Netlify
+# Handle client-side routing for dynamic paths
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# SPA fallback for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+
+# Preserve paths with trailing slashes (important for Next.js)
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
