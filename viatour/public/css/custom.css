@@ -1,5 +1,20 @@
 
 
+:root {
+  /* Primary colors */
+  --color-accent-1: #001A6E;       /* Primary accent (dark navy) */
+  --color-accent-1-dark: #001559;  /* Darker version of primary */
+  --color-accent-2: #074799;       /* Secondary accent (medium blue) */
+  
+  /* Additional theme colors */
+  --color-blue-1: #009990;         /* Tertiary accent (teal) */
+  --color-light-1: #E1FFBB;        /* Background/highlight (lime green) */
+  
+  /* Additional adjustments for a cohesive look */
+  --color-dark-1: #001A6E;         /* Dark text/backgrounds */
+  --color-light-3: #F9FFEF;        /* Light backgrounds that complement the lime */
+}
+
 .swiperPagination1 .swiper-pagination-bullet {
     width: 6px !important;
     height: 6px !important;
